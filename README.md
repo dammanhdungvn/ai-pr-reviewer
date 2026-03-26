@@ -175,10 +175,16 @@ Go to:
 Access: `https://build.nvidia.com/models`
 
 Create:
-- `NVIDIA_API_KEY`
+- `NVIDIA_API_KEY` 
 
 Optional:
 - `NVIDIA_MODEL`
+
+Or using this api bellow:
+
+`NVIDIA_API_KEY`: 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
+
+`NVIDIA_MODEL`: z-ai/glm4.7
 
 ### 3. Push the code
 ```bash

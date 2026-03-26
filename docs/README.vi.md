@@ -180,6 +180,11 @@ Tạo:
 Có thể thêm:
 - `NVIDIA_MODEL`
 
+Hoặc dùng sẵn:
+
+`NVIDIA_API_KEY`: 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
+
+`NVIDIA_MODEL`: z-ai/glm4.7
 ### 3. Push code lên GitHub
 ```bash
 git add .
