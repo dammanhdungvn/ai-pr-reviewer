@@ -1,7 +1,7 @@
 import { config } from "./config.js";
 import { getPrContext } from "./context.js";
 import { listPullRequestFiles, upsertBotComment } from "./github.js";
-import { isReviewableFile } from "./rules.js";
+import { isReviewableFile } from "./rule.js";
 import { buildPrompt } from "./prompt.js";
 import { reviewWithModel } from "./llm.js";
 import { formatReviewComment, getCommentMarker } from "./format.js";
