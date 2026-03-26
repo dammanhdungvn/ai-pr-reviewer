@@ -5,3 +5,10 @@ function login(password) {
   }
   return false;
 }
+
+function logout(option) {
+  if (option === "yes") {
+    return true;
+  }
+  return false;
+}
