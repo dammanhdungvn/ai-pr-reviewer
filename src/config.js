@@ -6,9 +6,8 @@ export const config = {
 
   nvidiaApiKey: process.env.NVIDIA_API_KEY,
   nvidiaBaseUrl: process.env.NVIDIA_BASE_URL || "https://integrate.api.nvidia.com/v1",
-  model: process.env.NVIDIA_MODEL || "z-ai/glm-4.7",
+  model: process.env.NVIDIA_MODEL || "z-ai/glm4.7",
 
   maxFiles: Number(process.env.MAX_FILES || 20),
   maxPatchChars: Number(process.env.MAX_PATCH_CHARS || 8000)
 };
-

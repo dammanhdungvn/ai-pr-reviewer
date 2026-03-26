@@ -27,11 +27,19 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Verify NVIDIA key and models
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+        run: |
+          echo "Checking NVIDIA API authentication..."
+          curl -f -i https://integrate.api.nvidia.com/v1/models \
+            -H "Authorization: Bearer $NVIDIA_API_KEY"
+
       - name: Run AI PR reviewer
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
-          NVIDIA_MODEL: z-ai/glm-4.7
+          NVIDIA_MODEL: z-ai/glm4.7
           MAX_FILES: "20"
           MAX_PATCH_CHARS: "8000"
         run: |
